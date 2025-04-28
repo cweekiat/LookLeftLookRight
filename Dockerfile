@@ -4,6 +4,7 @@ WORKDIR /app
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend/ .
+ENV NODE_OPTIONS="--max-old-space-size=2048"
 RUN npm run build  # or vite build
 
 # Stage 2: Serve with NGINX
