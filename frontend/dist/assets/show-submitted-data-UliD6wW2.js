@@ -1,0 +1,1 @@
+import{I as o,j as s}from"./index-Bfe_xoWe.js";function i(t,e="You submitted the following values:"){o.message(e,{description:s.jsx("pre",{className:"mt-2 w-full overflow-x-auto rounded-md bg-slate-950 p-4",children:s.jsx("code",{className:"text-white",children:JSON.stringify(t,null,2)})})})}export{i as s};

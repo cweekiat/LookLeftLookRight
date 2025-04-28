@@ -1,0 +1,4 @@
+date,ticker,action,shares,price,amount,notes
+2023-01-01,AAPL,buy,10,150,1500,Initial buy
+2023-02-01,AAPL,buy,5,160,800,Second buy
+2023-03-01,AAPL,sell,3,170,510,Partial sell

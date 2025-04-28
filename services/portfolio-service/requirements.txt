@@ -1,0 +1,9 @@
+fastapi
+pandas
+numpy
+scipy
+uvicorn
+yfinance
+sqlalchemy
+python-multipart
+psycopg2-binary

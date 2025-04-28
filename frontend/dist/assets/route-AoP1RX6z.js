@@ -1,0 +1,26 @@
+import{b as m,r as d,j as e,c as r,e as x,O as g}from"./index-Bfe_xoWe.js";import{S as f}from"./separator-BE2uk057.js";import{H as v,T as j,M as u}from"./theme-switch-BjwiKpR5.js";import{S as y,P as N}from"./search-ZsqLcqji.js";import{L as k}from"./link-pl1DbA3p.js";import{u as S}from"./useLocation-CzbqjYlu.js";import{S as M}from"./scroll-area-DT3SgYon.js";import{S as w,a as b,b as I,c as z,d as C}from"./select-bqc0ZnqQ.js";import{c as s}from"./createReactComponent-C46LlQ4r.js";import"./index-CAv9oZIZ.js";import"./dropdown-menu-_kFiOKFk.js";import"./x-C3Wykusl.js";import"./index-CZ3jPLKQ.js";import"./index-DmniG-u3.js";import"./index-0fGzjOH5.js";import"./createLucideIcon-D4fp6AvF.js";import"./index-ZRxCricZ.js";import"./index-BrGJxdOk.js";import"./index-ZcquDgY9.js";import"./check-BkV7RndE.js";import"./avatar-CDn0NmX0.js";import"./search-context-CNHBKlUV.js";import"./command-BxhSYefj.js";import"./index-Wje8tBtu.js";/**
+ * @license @tabler/icons-react v3.31.0 - MIT
+ *
+ * This source code is licensed under the MIT license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var T=s("outline","browser-check","IconBrowserCheck",[["path",{d:"M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z",key:"svg-0"}],["path",{d:"M4 8h16",key:"svg-1"}],["path",{d:"M8 4v4",key:"svg-2"}],["path",{d:"M9.5 14.5l1.5 1.5l3 -3",key:"svg-3"}]]);/**
+ * @license @tabler/icons-react v3.31.0 - MIT
+ *
+ * This source code is licensed under the MIT license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var P=s("outline","notification","IconNotification",[["path",{d:"M10 6h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3",key:"svg-0"}],["path",{d:"M17 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",key:"svg-1"}]]);/**
+ * @license @tabler/icons-react v3.31.0 - MIT
+ *
+ * This source code is licensed under the MIT license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var V=s("outline","palette","IconPalette",[["path",{d:"M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25",key:"svg-0"}],["path",{d:"M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0",key:"svg-1"}],["path",{d:"M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0",key:"svg-2"}],["path",{d:"M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0",key:"svg-3"}]]);/**
+ * @license @tabler/icons-react v3.31.0 - MIT
+ *
+ * This source code is licensed under the MIT license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var A=s("outline","tool","IconTool",[["path",{d:"M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5",key:"svg-0"}]]);/**
+ * @license @tabler/icons-react v3.31.0 - MIT
+ *
+ * This source code is licensed under the MIT license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var L=s("outline","user","IconUser",[["path",{d:"M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0",key:"svg-0"}],["path",{d:"M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",key:"svg-1"}]]);function B({className:i,items:t,...n}){const{pathname:o}=S(),l=m(),[c,p]=d.useState(o??"/settings"),h=a=>{p(a),l({to:a})};return e.jsxs(e.Fragment,{children:[e.jsx("div",{className:"p-1 md:hidden",children:e.jsxs(w,{value:c,onValueChange:h,children:[e.jsx(b,{className:"h-12 sm:w-48",children:e.jsx(I,{placeholder:"Theme"})}),e.jsx(z,{children:t.map(a=>e.jsx(C,{value:a.href,children:e.jsxs("div",{className:"flex gap-x-4 px-2 py-1",children:[e.jsx("span",{className:"scale-125",children:a.icon}),e.jsx("span",{className:"text-md",children:a.title})]})},a.href))})]})}),e.jsx(M,{orientation:"horizontal",type:"always",className:"bg-background hidden w-full min-w-40 px-1 py-2 md:block",children:e.jsx("nav",{className:r("flex space-x-2 py-1 lg:flex-col lg:space-y-1 lg:space-x-0",i),...n,children:t.map(a=>e.jsxs(k,{to:a.href,className:r(x({variant:"ghost"}),o===a.href?"bg-muted hover:bg-muted":"hover:bg-transparent hover:underline","justify-start"),children:[e.jsx("span",{className:"mr-2",children:a.icon}),a.title]},a.href))})})]})}function D(){return e.jsxs(e.Fragment,{children:[e.jsxs(v,{children:[e.jsx(y,{}),e.jsxs("div",{className:"ml-auto flex items-center space-x-4",children:[e.jsx(j,{}),e.jsx(N,{})]})]}),e.jsxs(u,{fixed:!0,children:[e.jsxs("div",{className:"space-y-0.5",children:[e.jsx("h1",{className:"text-2xl font-bold tracking-tight md:text-3xl",children:"Settings"}),e.jsx("p",{className:"text-muted-foreground",children:"Manage your account settings and set e-mail preferences."})]}),e.jsx(f,{className:"my-4 lg:my-6"}),e.jsxs("div",{className:"flex flex-1 flex-col space-y-2 overflow-hidden md:space-y-2 lg:flex-row lg:space-y-0 lg:space-x-12",children:[e.jsx("aside",{className:"top-0 lg:sticky lg:w-1/5",children:e.jsx(B,{items:E})}),e.jsx("div",{className:"flex w-full overflow-y-hidden p-1",children:e.jsx(g,{})})]})]})]})}const E=[{title:"Profile",icon:e.jsx(L,{size:18}),href:"/settings"},{title:"Account",icon:e.jsx(A,{size:18}),href:"/settings/account"},{title:"Appearance",icon:e.jsx(V,{size:18}),href:"/settings/appearance"},{title:"Notifications",icon:e.jsx(P,{size:18}),href:"/settings/notifications"},{title:"Display",icon:e.jsx(T,{size:18}),href:"/settings/display"}],le=D;export{le as component};

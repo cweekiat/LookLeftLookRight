@@ -1,0 +1,71 @@
+services:
+  auth-db:
+    image: postgres:14
+    container_name: auth-db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: auth_db
+    volumes:
+      - auth-db-data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  auth-service:
+    build:
+      context: ./services/auth-service
+    container_name: auth-service
+    environment:
+      DATABASE_URL: postgresql://user:pass@auth-db:5432/auth_db
+      SECRET_KEY: super-secret-key
+    depends_on:
+      - auth-db
+    expose:
+      - "8000"
+    networks:
+      - app-network
+
+  portfolio-db:
+    image: postgres:14
+    container_name: portfolio-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: portfolio_db
+    volumes:
+      - portfolio-db-data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  portfolio-service:
+    build:
+      context: ./services/portfolio-service
+    container_name: portfolio-service
+    environment:
+      DATABASE_URL: postgresql://user:pass@portfolio-db:5432/portfolio_db
+    depends_on:
+      - portfolio-db
+    expose:
+      - "8000"
+    networks:
+      - app-network
+
+  nginx:
+    build: .
+    container_name: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - auth-service
+      - portfolio-service
+    networks:
+      - app-network
+
+volumes:
+  auth-db-data:
+  portfolio-db-data:
+
+networks:
+  app-network:
+    driver: bridge

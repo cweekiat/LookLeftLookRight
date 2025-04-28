@@ -1,0 +1,11 @@
+fastapi
+python-dotenv
+authlib
+httpx
+pydantic[email]
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-jose
+passlib
+itsdangerous
